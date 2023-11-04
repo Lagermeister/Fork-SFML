@@ -44,7 +44,7 @@ namespace priv
 class GlContext;
 }
 
-struct Event;
+class Event;
 
 ////////////////////////////////////////////////////////////
 /// \brief Window that serves as a target for OpenGL rendering
@@ -324,7 +324,7 @@ private:
 ///    for (sf::Event event; window.pollEvent(event);)
 ///    {
 ///        // Request for closing the window
-///        if (event.type == sf::Event::Closed)
+///        if (event.is<sf::Event::Closed>())
 ///            window.close();
 ///    }
 ///
